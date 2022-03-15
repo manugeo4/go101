@@ -5,19 +5,17 @@ import (
 )
 
 func main() {
-	ages := make(map[string]int)
-
-	//below is a map literal
-	ages1 := map[string]int{
+	ages := map[string]int{
+		"shiva":  39,
 		"julie":  12,
 		"juliet": 45}
-
-	fmt.Println(ages)
-	fmt.Println(ages1)
-	fmt.Println(ages1["juliet"]) //map elements can be accessed as a subscript notation
-	delete(ages1, "juliet")
-	fmt.Println(ages1)
-	ages["Babs"] += 1
-	fmt.Println(ages["Babs"])
+	ages1 := map[string]int{
+		"shiva":  39,
+		"julie":  12,
+		"juliet": 44}
+	mapSort(ages)
+	fmt.Println(mapEqual(ages, ages1))
 
 }
+
+/////////end of main
