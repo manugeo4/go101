@@ -2,13 +2,14 @@ package main
 
 import (
 	"fmt"
+
+	"github.com/manugeo4/gd"
+	"github.com/manugeo4/gf"
 )
 
 func main() {
 
-	mapSort(ages)
-	fmt.Println(mapEqual(ages, ages1))
+	gf.MapSort(gd.Ages)
+	fmt.Println(gf.MapEqual(gd.Ages, gd.Ages1))
 
 }
-
-/////////end of main
